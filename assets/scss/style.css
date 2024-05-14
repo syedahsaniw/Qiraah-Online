@@ -75,6 +75,43 @@
   color: #C86FFF;
 }
 
+/*Information CSS*/
+/* Container holding the image and the text */
+/* Styles for the image section */
+.image-section {
+  display: grid;
+  grid-template-columns: 1fr; /* Set one column for the image */
+  background-image: url('file:///E:/Office%20Work/Qiraah/Qiraah-Online/assets/img/gallery/about3.png'); /* Add your background image URL here */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; /* Adjust as needed for spacing */
+}
+
+/* Styles for the text content */
+.text-content {
+  padding: 30px;
+  max-width: 50%; /* Limit width for the text content */
+  align-self: center; /* Vertically center text content */
+  justify-self: end; /* Align text content to the end (right side) */
+}
+
+.text-content h2 {
+  font-family: 'fertigo-pro', serif; /* Use the provided font */
+  font-size: 56px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.text-content p {
+  font-family: 'poppins', sans-serif; /* Use the provided font */
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+
+/*Ends Information CSS*/
+
 .boxed-btn {
   background: #fff;
   color: #C86FFF !important;
@@ -173,7 +210,7 @@ h4,
 h5,
 h6 {
   font-family: "fertigo-pro", sans-serif;
-  color: #4255A4;
+  color: #000000;
   margin-top: 0px;
   font-style: normal;
   font-weight: 400;
@@ -463,6 +500,7 @@ hr {
 
 .hero-btn {
   padding: 30px 29px;
+  border-radius: 50px;
 }
 
 .white-btn {
@@ -526,8 +564,8 @@ hr {
 }
 
 .border-btn {
-  border: 1px solid #FF9F67;
-  color: #FF9F67;
+  border: 1px solid #D7CB91;
+  color: #294B4D;
   font-family: "fertigo-pro", sans-serif;
   background: none;
   border-radius: 5px;
@@ -560,7 +598,7 @@ hr {
   top: 0;
   width: 101%;
   height: 101%;
-  background: #FF9F67;
+  background: #294B4D;
   z-index: -1;
   transition: transform 0.5s;
   transition-timing-function: ease;
@@ -615,7 +653,7 @@ hr {
 
 /* scrollUp */
 #scrollUp, #back-top {
-  background: #C86FFF;
+  background: #294B4D;
   height: 50px;
   width: 50px;
   right: 31px;
@@ -2411,11 +2449,13 @@ hr {
   }
 }
 .section-tittle h2 {
-  font-size: 42px;
+  font-family: "poppins", sans-serif;
+  font-size: 64px;
   display: block;
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 21px;
+  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-tittle h2 {
@@ -2783,11 +2823,11 @@ hr {
 }
 .mobile_menu .slicknav_menu .slicknav_nav {
   margin-top: 9px !important;
-  background: #C86FFF;
+  background: #ffffff;
 }
 .mobile_menu .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #C86FFF;
+  color: #ffffff;
 }
 .mobile_menu .slicknav_menu .slicknav_nav a {
   font-size: 15px;
@@ -2908,7 +2948,8 @@ body {
   }
 }
 .slider-area .hero__caption h1, .slider-area2 .hero__caption h1 {
-  font-size: 60px;
+  font-family: 'fertigo-pro', serif;
+  font-size: 64px;
   font-weight: 700;
   color: #fff;
   line-height: 1.3;
@@ -2941,8 +2982,9 @@ body {
   }
 }
 .slider-area .hero__caption p, .slider-area2 .hero__caption p {
+  font-family: 'poppins', sans-serif;
+  font-size: 24px;
   color: #fff;
-  font-size: 18px;
   margin-bottom: 34px;
 }
 @media (max-width: 575px) {
@@ -3782,13 +3824,13 @@ body {
 }
 .courses-area .properties:hover .border-btn2 {
   color: #fff;
-  background: #FF9F67;
+  background: #294B4D;
   transition: 0.4s;
 }
 
 .rating i {
   font-size: 14px;
-  color: #FF7B2E;
+  color: #294B4D;
 }
 
 .courses-actives button.slick-arrow {
