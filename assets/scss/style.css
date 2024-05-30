@@ -81,7 +81,7 @@
 .image-section {
   display: grid;
   grid-template-columns: 1fr; /* Set one column for the image */
-  background-image: url('file:///E:/Office%20Work/Qiraah/Qiraah-Online/assets/img/gallery/about3.png'); /* Add your background image URL here */
+  background-image: url('../img/hero/hero_2.png'); /* Add your background image URL here */
   background-size: cover;
   background-position: center;
   padding: 100px 0; /* Adjust as needed for spacing */
@@ -4014,7 +4014,7 @@ body {
 }
 
 .footer-area .footer-pera p {
-  color: #fff;
+  color: #000000;
   padding-right: 52px;
   font-size: 16px;
   margin-bottom: 50px;
@@ -4029,7 +4029,7 @@ body {
   padding: 0;
 }
 .footer-area .footer-tittle h4 {
-  color: #fff;
+  color: #294B4D;
   font-size: 22px;
   margin-bottom: 29px;
   font-weight: 600;
@@ -4038,7 +4038,7 @@ body {
   margin-bottom: 15px;
 }
 .footer-area .footer-tittle ul li a {
-  color: #fff;
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
   -webkit-text-decoration: underline transparent;
@@ -4046,11 +4046,11 @@ body {
   transition: 0.2s;
 }
 .footer-area .footer-tittle ul li a:hover {
-  color: #fff;
+  color: #000000;
   text-decoration: underline;
 }
 .footer-area .footer-tittle p {
-  color: #fff;
+  color: #000000;
 }
 .footer-area .footer-form {
   margin-top: 40px;
@@ -4062,7 +4062,7 @@ body {
   width: 100%;
   height: 43px;
   padding: 10px 20px;
-  border: 1px solid #fff;
+  border: 1px solid #000000;
   border-radius: 30px;
 }
 .footer-area .footer-form form .form-icon button {
@@ -4077,25 +4077,25 @@ body {
   border-radius: 0 3px 3px 0;
 }
 .footer-area .info.error {
-  color: #C86FFF;
+  color: #000000;
 }
 
 .footer-bottom-area .footer-border {
   padding: 33px 0px 20px;
 }
 .footer-bottom-area .footer-copy-right p {
-  color: #fff;
+  color: #000000;
   font-weight: 400;
   font-size: 18px;
   line-height: 2;
   margin-bottom: 12px;
 }
 .footer-bottom-area .footer-copy-right p i {
-  color: #C86FFF;
+  color: #000000;
 }
 .footer-social a {
   background: rgba(128, 136, 255, 0.1);
-  color: #fff;
+  color: #000000;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -4106,7 +4106,7 @@ body {
   margin-right: 8px;
 }
 .footer-social a:hover {
-  color: #fff;
+  color: #000000;
   background: #C86FFF;
 }
 .footer-social a i {
@@ -4114,7 +4114,7 @@ body {
 }
 
 .footer-bg {
-  background: #4255A4;
+  background: #F2F2F2;
 }
 
 .login-body {
