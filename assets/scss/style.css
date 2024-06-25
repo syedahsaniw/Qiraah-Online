@@ -80,19 +80,23 @@
 /* Styles for the image section */
 .image-section {
   display: grid;
-  grid-template-columns: 1fr; /* Set one column for the image */
+  grid-template-columns: 1fr; /* One column layout */
   background-image: url('../img/hero/hero_2.png'); /* Add your background image URL here */
   background-size: cover;
   background-position: center;
-  padding: 100px 0; /* Adjust as needed for spacing */
+  padding: 50px 0; /* Adjust as needed for spacing */
+  position: relative; /* Ensure the section is positioned relative for absolute positioning of text content */
 }
 
 /* Styles for the text content */
 .text-content {
-  padding: 30px;
-  max-width: 50%; /* Limit width for the text content */
+  padding: 50px;
+  max-width: 69%; /* Limit width for the text content */
   align-self: center; /* Vertically center text content */
   justify-self: end; /* Align text content to the end (right side) */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  position: relative; /* Ensure the text-content is positioned relative for absolute positioning */
+  right: 0; /* Keep it aligned to the right */
 }
 
 .text-content h2 {
@@ -108,6 +112,31 @@
   margin-bottom: 30px;
   color: #000;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .image-section {
+    padding: 20px 0; /* Reduce padding for mobile view */
+  }
+
+  .text-content {
+    max-width: 90%; /* Make text content take up more space on smaller screens */
+    padding: 20px; /* Reduce padding for mobile view */
+    justify-self: center; /* Center the text content horizontally */
+    right: auto; /* Reset right alignment */
+    left: 50%; /* Center horizontally by shifting left */
+    transform: translateX(-50%); /* Adjust position to center */
+  }
+
+  .text-content h2 {
+    font-size: 32px; /* Adjust font size for mobile view */
+  }
+
+  .text-content p {
+    font-size: 18px; /* Adjust font size for mobile view */
+  }
+}
+
 
 
 /*Ends Information CSS*/
@@ -2828,7 +2857,7 @@ hr {
 }
 .mobile_menu .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #ffffff;
+  color: #294B4D;
 }
 .mobile_menu .slicknav_menu .slicknav_nav a {
   font-size: 15px;
@@ -5589,9 +5618,25 @@ body {
 {
   text-align: center;
 }
-.how-img img{
+.how-img img {
   max-width: 100%;
-  height: 100%;
+  height: 100%; /* Maintain aspect ratio */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .how-section1 h2,
+  .how-section1 h4,
+  .how-section1 p,
+  .how-section1 .subheading,
+  .how-section1 h1 {
+    text-align: center;
+  }
+
+  .how-section1 {
+    margin-top: 0; /* Adjust margin if necessary for mobile view */
+    padding: 5%; /* Adjust padding if necessary for mobile view */
+  }
 }
 
 /*=================== contact form end ====================*/
