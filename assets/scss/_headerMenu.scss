@@ -90,16 +90,16 @@
                 }
                 a{
                     color: #fff;
-                    font-weight: 600;
+                    font-weight: 500;
                     padding: 39px 2px;
                     display: block;
-                    font-size: 16px;
+                    font-size: 24px;
                     @include transition(.3s);
                     text-transform: capitalize;
                 }
                 &:hover{
                     & > a{
-                        color:#fff;
+                        color:#D7CB91;
                     }
                 }
             }
