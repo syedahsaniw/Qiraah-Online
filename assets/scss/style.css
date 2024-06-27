@@ -145,25 +145,32 @@
 
 .boxed-btn {
   background: #294B4D;
-  color: #ffffff !important;
-  display: inline-block;
-  padding: 18px 44px;
-  font-family: "fertigo-pro", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  border: 0;
-  border: 1px solid #000000;
-  border-radius: 50px;
-  letter-spacing: 3px;
-  text-align: center;
-  color: #294B4D;
-  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  padding: 25px 38px !important;
+  color: #D7CB91;
   cursor: pointer;
+  display: inline-blockc !important;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  line-height: 1;
+  -moz-user-select: none;
+  letter-spacing: 1px;
+  line-height: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+  display: inline-block !important;
+  text-align: center;
 }
 .boxed-btn:hover {
-  background: #D7CB91;
-  color: #000000 !important;
-  border: 1px solid #000000;
+  color: #fff;
 }
 .boxed-btn:focus {
   outline: none;
@@ -2501,7 +2508,7 @@ hr {
   }
 }
 .section-tittle h2 {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", "sans-serif";
   font-size: 64px;
   display: block;
   font-weight: 600;
@@ -2722,6 +2729,7 @@ hr {
   }
 }
 .main-header .main-menu ul li {
+  font-family: 'Poppins', sans-serif;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -4079,13 +4087,14 @@ body {
   padding: 0;
 }
 .footer-area .footer-tittle h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif; 
   color: #294B4D;
   font-size: 22px;
   margin-bottom: 29px;
   font-weight: 600;
 }
 .footer-area .footer-tittle ul li {
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 15px;
 }
 .footer-area .footer-tittle ul li a {
@@ -5482,7 +5491,8 @@ body {
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 .contact-title {
-  font-size: 27px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
   font-weight: 600;
   margin-bottom: 20px;
 }
