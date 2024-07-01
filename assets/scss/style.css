@@ -4072,6 +4072,7 @@ body {
 }
 
 .footer-area .footer-pera p {
+  text-align: center;
   color: #000000;
   padding-right: 52px;
   font-size: 16px;
