@@ -4407,7 +4407,7 @@ body {
   text-transform: capitalize;
 }
 .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a:hover {
-  color: #C86FFF;
+  color: #294B4D;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a {
@@ -4436,7 +4436,7 @@ body {
 }
 
 .home-blog-single:hover .blog-img-cap .blog-img .blog-date {
-  background: #C86FFF;
+  background: #294B4D;
 }
 .home-blog-single:hover .blog-img-cap .blog-img img {
   transform: scale(1.04);
@@ -4457,7 +4457,7 @@ body {
   transition: 0.4s;
 }
 .blog_area a:hover, .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #C86FFF 0%, #C86FFF 99%);
+  background: -webkit-linear-gradient(131deg, #294B4D 0%, #294B4D 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -4884,7 +4884,7 @@ body {
   left: 10px;
   display: block;
   color: #fff;
-  background-color: #C86FFF;
+  background-color: #294B4D;
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -4957,7 +4957,7 @@ body {
   box-shadow: none;
 }
 .blog_right_sidebar .search_widget .input-group button {
-  background: #C86FFF;
+  background: #294B4D;
   border-left: 0;
   border: 1px solid #f0e9ff;
   padding: 4px 15px;
