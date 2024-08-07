@@ -75,6 +75,56 @@
   color: #C86FFF;
 }
 
+
+.ayat-player-section {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.ayat-player-section .left-panel {
+  height: 500px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.ayat-player-section .right-panel {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ayat-player-section .ayat {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ayat-player-section .ayat:hover {
+  background-color: #e2e6ea;
+}
+
+.ayat-player-section .media-player {
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 767px) {
+  .ayat-player-section .left-panel, 
+  .ayat-player-section .right-panel {
+      padding: 10px;
+  }
+}
+
+
+
 /*Information CSS*/
 /* Container holding the image and the text */
 /* Styles for the image section */
