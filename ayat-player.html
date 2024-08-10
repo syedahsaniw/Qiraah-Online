@@ -126,7 +126,10 @@
                 <div class="row">
                     <div class="col-md-4 left-panel">
                         <div class="ayat-list">
-                            <?php
+                            <ul>
+                                <li><a href="assets/Resource/Ayats/001-Surat Al-Fatihah سورة الفاتحة.mp3">Surat Al-Fatihah</a></li>
+                            </ul>
+                            <!-- <?php
                             // PHP code here
                             require_once 'getID3/getid3/getid3.php';
                             $getID3 = new getID3;
@@ -142,12 +145,12 @@
                                 }
                                 closedir($handle);
                             }
-                            ?>
+                            ?> -->
                         </div>
                     </div>
                     <div class="col-md-8 right-panel">
-                        <audio id="audioPlayer" class="media-player" controls>
-                            <source id="audioSource" src="" type="audio/mpeg">
+                        <audio id="audio-player" controls>
+                            <source src="assets/Resource/Ayats/001-Surat Al-Fatihah سورة الفاتحة.mp3" type="audio/mp3">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
