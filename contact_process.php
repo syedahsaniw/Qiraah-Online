@@ -1,34 +1,42 @@
 <?php
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Sanitize and validate form data
+    $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $message = filter_var(trim($_POST["message"]), FILTER_SANITIZE_STRING);
+
+    // Validate form fields
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "Please fill in all fields.";
+        exit;
+    }
+
+    // Your email address
     $to = "ahsanzahid106@gmail.com";
-    $from = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
-    $number = $_REQUEST['number'];
-    $cmessage = $_REQUEST['message'];
 
-    $headers = "From: $from";
-	$headers = "From: " . $from . "\r\n";
-	$headers .= "Reply-To: ". $from . "\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    // Subject of the email
+    $subject = "New Contact Form Submission from $name";
 
+    // Email body content
+    $body = "<strong>Name:</strong> $name<br>";
+    $body .= "<strong>Email:</strong> $email<br>";
+    $body .= "<strong>Message:</strong><br>$message";
 
-    $logo = 'img/logo.png';
-    $link = '#';
+    // Headers for the email
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
-	$body .= "<table style='width: 100%;'>";
-	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
-	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
-	$body .= "</td></tr></thead><tbody><tr>";
-	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
-	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
-	$body .= "</tr>";
-	$body .= "<tr><td></td></tr>";
-	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
-	$body .= "</tbody></table>";
-	$body .= "</body></html>";
-
-    $send = mail($to, $body, $headers);
+    // Send the email
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Thank you for contacting us!";
+    } else {
+        echo "Oops! Something went wrong, and we couldn't send your message.";
+    }
+} else {
+    echo "There was a problem with your submission, please try again.";
+}
 
 ?>

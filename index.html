@@ -223,35 +223,36 @@
         <br/>
         <!-- Services End -->
         <!--? About Area-2 Start -->
-        <section class="contact-section">
+        <section class="centered-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="contact-title">Contact Us</h2>
-                    </div>
-                    <div class="col-lg-12">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 centered-col">
+                        <h2 class="centered-title">Contact Now</h2>
+                        <form class="centered-form" id="contactForm" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Enter Message"></textarea>
+                                    <div class="centered-group">
+                                        <textarea class="centered-control w-100" name="message" id="message" cols="30" rows="9" placeholder="Enter Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                    <div class="centered-group">
+                                        <input class="centered-control valid" name="name" id="name" type="text" placeholder="Enter your name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                    <div class="centered-group">
+                                        <input class="centered-control valid" name="email" id="email" type="email" placeholder="Enter email address">
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                            <div class="centered-group mt-3">
+                                <button type="submit" class="centered-button boxed-btn">Send</button>
                             </div>
                         </form>
+                        <div id="form-message" style="display:none;">
+                            <p>Thank you for contacting us.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -275,14 +276,15 @@
                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="" style="height: 150px; width: 150px;"></a>
                                    </div>
                                    <div class="footer-tittle">
-                                       <div class="footer-pera">
+                                       <div class="single-footer-caption mb-50">
                                            <p>Connect with us now to embark on a path of knowledge and enlightenment.</p>
                                        </div>
                                    </div>
                                    <!-- social -->
                                    <div class="footer-social">
-                                       <a href="https://m.facebook.com/profile.php?id=61560685315188"><i class="fab fa-facebook-f"></i></a>
-                                       <a href="https://www.linkedin.com/company/qiraah-online/"><i class="fab fa-linkedin-in"></i></a>
+                                       <a href="https://m.facebook.com/profile.php?id=61560685315188"><i class="fab fa-facebook fa-lg"></i></a>
+                                       <a href="https://www.linkedin.com/company/qiraah-online/"><i class="fab fa-linkedin fa-lg"></i></a>
+                                       <a href="https://www.linkedin.com/company/qiraah-online/"><i class="fab fa-instagram fa-lg"></i></a>
                                     </div>
                                </div>
                            </div>
@@ -342,6 +344,38 @@
 </div>
 
 <!-- JS here -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+    
+        // Get form values
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+    
+        // Simple validation
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill in all fields.');
+            return; // Stop the form submission if validation fails
+        }
+    
+        const formData = new FormData(this);
+    
+        fetch('contact_process.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Show the message and hide the form
+            document.getElementById('form-message').style.display = 'block';
+            document.getElementById('contactForm').style.display = 'none';
+        })
+        .catch(error => console.error('Error:', error));
+    });
+    
+    
+    </script>
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->
 <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
