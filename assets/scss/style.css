@@ -2890,10 +2890,10 @@ hr {
 }
 .main-header .main-menu ul li a {
   color: #000000;
-  font-weight: 400;
+  font-weight: 800;
   padding: 39px 2px;
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   transition: 0.3s;
   text-transform: capitalize;
 }
@@ -2919,10 +2919,10 @@ hr {
 .main-header .main-menu ul ul.submenu > li > a {
   padding: 6px 10px !important;
   font-size: 16px;
-  color: #367FFF;
+  color: #294B4D;
 }
 .main-header .main-menu ul ul.submenu > li > a:hover {
-  color: #C86FFF;
+  color: #D7CB91;
   background: none;
   padding-left: 13px !important;
 }
