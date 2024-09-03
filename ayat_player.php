@@ -79,9 +79,9 @@
                                                 <li><a href="courses.html">Courses</a>
                                                     <ul class="submenu">
                                                         <li><a href="courses.html#Quran_Nazra_Regular">Quran Nazra Regular</a></li>
-                                                        <li><a href="coureses.html#Quran_Nazra_Extended">Quran Nazra Extended</a></li>
+                                                        <li><a href="courses.html#Quran_Nazra_Extended">Quran Nazra Extended</a></li>
                                                         <li><a href="courses.html#Quran_Memorization">Quran Memorization</a></li>
-                                                        <li><a href="courses.html#Free_Islamic_Course">Islam Free Course</a></li>
+                                                        <li><a href="courses.html#Free_Islamic_Course">Free Courses</a></li>
                                                     </ul>
                                                 </li>
                                                 </li>
@@ -193,39 +193,39 @@
         </main>
         <footer>
             <div class="footer-wrappper footer-bg">
-            <!-- Footer Start-->
-            <div class="footer-area footer-padding">
-                <div class="container text-center">
-                    <div class="row justify-content-between">
-                        <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="single-footer-caption mb-30">
-                                    <!-- logo -->
-                                    <div class="footer-logo mb-25">
-                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="" style="height: 150px; width: 150px;"></a>
-                                    </div>
-                                    <div class="footer-tittle">
-                                        <div class="single-footer-caption mb-50">
-                                            <p>Connect with us now to embark on a path of knowledge and enlightenment.</p>
+               <!-- Footer Start-->
+               <div class="footer-area footer-padding">
+                   <div class="container text-center">
+                       <div class="row justify-content-between">
+                           <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+                               <div class="single-footer-caption mb-50">
+                                   <div class="single-footer-caption mb-30">
+                                       <!-- logo -->
+                                       <div class="footer-logo mb-25">
+                                           <a href="index.html"><img src="assets/img/logo/logo.png" alt="" style="height: 150px; width: 150px;"></a>
+                                       </div>
+                                       <div class="footer-tittle">
+                                           <div class="single-footer-caption mb-50">
+                                               <p>Connect with us now to embark on a path of knowledge and enlightenment.</p>
+                                           </div>
+                                       </div>
+                                       <!-- social -->
+                                       <div class="footer-social">
+                                           <a href="https://m.facebook.com/profile.php?id=61560685315188"><i class="fab fa-facebook fa-lg"></i></a>
+                                           <a href="https://www.linkedin.com/company/qiraah-online/"><i class="fab fa-linkedin fa-lg"></i></a>
+                                           <a href="https://www.instagram.com/qiraahonline/"><i class="fab fa-instagram fa-lg"></i></a>
                                         </div>
-                                    </div>
-                                    <!-- social -->
-                                    <div class="footer-social">
-                                        <a href="https://m.facebook.com/profile.php?id=61560685315188"><i class="fab fa-facebook fa-lg"></i></a>
-                                        <a href="https://www.linkedin.com/company/qiraah-online/"><i class="fab fa-linkedin fa-lg"></i></a>
-                                        <a href="https://www.instagram.com/qiraahonline/"><i class="fab fa-instagram fa-lg"></i></a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>QUICK LINKS</h4>
                                     <ul>
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="courses.html">Courses</a></li>
-                                        <li><a href="blog.html">Blogs</a></li>
+                                        <!-- <li><a href="blog.html">Blogs</a></li> -->
                                         <li><a href="downloads.html">Downloads</a></li>
                                         <li><a href="about.html">About Us</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
@@ -234,39 +234,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>CONTACT US</h4>
-                                    <ul>
-                                        <li><a href="https://wa.me/923132404755"> +92 3132404755</a></li>
-                                        <li>connect@qiraahonline.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- footer-bottom area -->
-            <div class="footer-bottom-area">
-                <div class="container">
-                    <div class="footer-border">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-xl-12 ">
-                                <div class="footer-copy-right text-center">
-                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                               <div class="single-footer-caption mb-50">
+                                   <div class="footer-tittle">
+                                       <h4>CONTACT US</h4>
+                                       <ul>
+                                           <li><a href="https://wa.me/+447448303855"> +44 7448 303855</a></li>
+                                           <li>connect@qiraahonline.com</li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- footer-bottom area -->
+               <div class="footer-bottom-area">
+                   <div class="container">
+                       <div class="footer-border">
+                           <div class="row d-flex align-items-center">
+                               <div class="col-xl-12 ">
+                                   <div class="footer-copy-right text-center">
+                                       <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                         Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Qiraah Online</a>
                                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer End-->
-            </div>
-        </footer>  
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- Footer End-->
+             </div>
+         </footer>
       <!-- Scroll Up -->
       <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>

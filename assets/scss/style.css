@@ -245,10 +245,11 @@
 .text-content h2 {
   font-family: "Poppins", sans-serif;
   font-size: 64px;
-  font-weight: 500;
+  font-weight: 1000; /* Bold text */
   color: #000000;
   line-height: 1.3;
   margin-bottom: 22px;
+  text-align: right; /* Aligns the text to the right */
 }
 
 .text-content p {
@@ -256,7 +257,9 @@
   font-size: 24px;
   margin-bottom: 30px;
   color: #000;
+  text-align: right; /* Aligns the paragraph text to the right */
 }
+
 
 /* Media query for mobile devices */
 @media (max-width: 600px) {
@@ -2263,7 +2266,7 @@ hr {
   position: relative;
   border-style: solid;
   border-width: 1px;
-  border-top-color: #C86FFF;
+  border-top-color: #D7CB91;
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -2276,7 +2279,7 @@ hr {
 }
 
 .preloader .preloader-circle2 {
-  border-top-color: #0078ff;
+  border-top-color: #294B4D;
 }
 
 .preloader .preloader-img {
@@ -4051,19 +4054,19 @@ body {
   transition: 0.2s;
 }
 .courses-actives button.slick-arrow i:hover {
-  color: #4255A4;
+  color: #D7CB91;
 }
 .courses-actives button.slick-prev {
   left: -58px;
 }
 .courses-actives button.slick-prev i {
-  color: #ddd;
+  color: #294B4D;
 }
 .courses-actives button.slick-next {
   right: -58px;
 }
 .courses-actives button.slick-next i {
-  color: #ddd;
+  color: #294B4D;
 }
 
 .single-features {
