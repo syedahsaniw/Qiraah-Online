@@ -107,12 +107,14 @@
 }
 
 .centered-control {
+  height: 150px; /* Increased height for a bigger message box */
   width: 100%;
   height: 40px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  resize: vertical; /* Allows the user to resize the textarea vertically */
 }
 
 .centered-control:focus {
@@ -249,7 +251,6 @@
   color: #000000;
   line-height: 1.3;
   margin-bottom: 22px;
-  text-align: right; /* Aligns the text to the right */
 }
 
 .text-content p {
@@ -257,7 +258,6 @@
   font-size: 24px;
   margin-bottom: 30px;
   color: #000;
-  text-align: right; /* Aligns the paragraph text to the right */
 }
 
 
@@ -2273,7 +2273,7 @@ hr {
   z-index: 10;
   border-radius: 50%;
   box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-  background-color: #fff;
+  background-color: #294B4D;
   animation: zoom 2000ms infinite ease;
   transition: 0.6s;
 }
